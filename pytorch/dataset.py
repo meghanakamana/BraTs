@@ -18,7 +18,9 @@ except ImportError:
     accimage = None
 
 from torch.utils.data import DataLoader, Dataset
-from PIL import Image, PILLOW_VERSION
+from PIL import Image
+import PIL
+PILLOW_VERSION = PIL.__version__
 from scipy.ndimage.filters import gaussian_filter
 from scipy.ndimage.interpolation import map_coordinates
 
